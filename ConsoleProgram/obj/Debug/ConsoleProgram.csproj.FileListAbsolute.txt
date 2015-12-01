@@ -1,0 +1,6 @@
+E:\Project\cSharp\ConsoleProgram\bin\Debug\ConsoleProgram.exe.config
+E:\Project\cSharp\ConsoleProgram\bin\Debug\ConsoleProgram.exe
+E:\Project\cSharp\ConsoleProgram\bin\Debug\ConsoleProgram.pdb
+E:\Project\cSharp\ConsoleProgram\obj\Debug\ConsoleProgram.csprojResolveAssemblyReference.cache
+E:\Project\cSharp\ConsoleProgram\obj\Debug\ConsoleProgram.exe
+E:\Project\cSharp\ConsoleProgram\obj\Debug\ConsoleProgram.pdb
