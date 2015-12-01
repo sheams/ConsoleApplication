@@ -195,17 +195,71 @@ namespace ConsoleProgram
 
 
     //  For Loops Program-3
+    /*class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 0;
+            for (;; )
+            {
+                Console.Write("Happy Birthday! ");
+                ++i;
+                if(i > 10)
+                {
+                    break;
+                }
+            }
+            //int age = 35;
+            //int newAge = ++age;
+            //Console.WriteLine("age: {0}, newAge: {1}", age, newAge);
+
+            //newAge = ++age;
+            //Console.WriteLine("age: {0}, newAge: {1}", age, newAge);
+            //Console.ReadKey();
+        }
+    }*/
+
+
+
+
+    //  For Loops Program-4
+    /*class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 0;
+            for (;;)
+            {
+                ++i;
+                if (i == 5)
+                {
+                    continue;
+                }
+                Console.Write("Happy Birthday! {0} ", i);
+                Console.ReadKey();
+                if(i > 10)
+                {
+                    break;
+                }
+            }
+        }
+    }*/
+
+
+
+
+
+    //  For Loops Program-5
     class Program
     {
         static void Main(string[] args)
         {
-            int age = 35;
-            int newAge = ++age;
-            Console.WriteLine("age: {0}, newAge: {1}", age, newAge);
-
-            newAge = ++age;
-            Console.WriteLine("age: {0}, newAge: {1}", age, newAge);
-            Console.ReadKey();
+           for (int i = 0; i < 2000; i++)
+                if (i % 100 == 0)
+                {
+                    Console.Write("Happy Birthday! {0} ", i);
+                    Console.ReadKey();
+                }
         }
     }
 
