@@ -121,7 +121,7 @@ namespace ConsoleProgram
 
             while(age > 0)
             {
-                Console.Write("Happy Birthday");
+                Console.Write("Happy Birthday ");
                 age--; 
                 //or
                 // age = age - 1;
@@ -145,7 +145,7 @@ namespace ConsoleProgram
 
            do
             {
-                Console.Write("Happy Birthday");
+                Console.Write("Happy Birthday ");
                 age--;
                 //or
                 // age = age - 1;
@@ -160,12 +160,53 @@ namespace ConsoleProgram
 
 
 
-    //  For Loops Program
+    //  For Loops Program-1
+    /*class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int age = 5; age > 0; age--) 
+            {
+                Console.Write("Happy Birthday ");
+            }
+            Console.WriteLine("\nSheam!!");
+            Console.ReadKey();
+
+        }
+    }*/
+
+
+
+    //  For Loops Program-2
+    /*class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 0; i < 10; ++i)
+            {
+                Console.Write("Happy Birthday! ");
+            }
+            Console.WriteLine("\nSheam!!");
+            Console.ReadKey();
+
+        }
+    }*/
+
+
+
+    //  For Loops Program-3
     class Program
     {
         static void Main(string[] args)
         {
+            int age = 35;
+            int newAge = ++age;
+            Console.WriteLine("age: {0}, newAge: {1}", age, newAge);
 
+            newAge = ++age;
+            Console.WriteLine("age: {0}, newAge: {1}", age, newAge);
+            Console.ReadKey();
         }
+    }
 
 }
