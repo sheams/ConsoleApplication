@@ -381,8 +381,8 @@ namespace ConsoleProgram
 
 
 
-    // Constructors and Initialization Program
-    class Program
+    // Constructors and Initialization Program-1
+    /*class Program
     {
         class Employee
         {
@@ -409,6 +409,58 @@ namespace ConsoleProgram
             Console.WriteLine("Dave's age is {0} he started on {1} and makes {2}", Dave.Age, Dave.startingDate, Dave.salary);
             Dave.Bonus(0.05);
             Console.WriteLine("Dave's age is {0} he started on {1} and makes {2}", Dave.Age, Dave.startingDate, Dave.salary);
+            Console.ReadKey();
+        }
+    }*/
+
+
+
+
+
+    // Constructors and Initialization Program-2
+    class Program
+    {
+        class Employee
+        {
+            public int Age { get; set; }
+            public string Name { get; set; }
+            public double Salary { get; set; }
+            public DateTime StartingDate { get; set; }
+
+
+            public void Bonus(double bonousPrecent)
+            {
+                Salary += Salary * bonousPrecent;
+            }
+
+            public Employee(int age, string name, double salary, DateTime startingDate)
+            {
+                Age = age;
+                Name = name;
+                Salary = salary;
+                StartingDate = startingDate;
+
+            }
+
+            public Employee()
+            {
+
+            }
+        }
+        static void Main(string[] args)
+        {
+            Employee Dave = new Employee()
+            {
+                Age = 25,
+                Name = "David",
+                Salary = 50000.00,
+                StartingDate = new DateTime(2015, 12, 4),
+            };
+            Console.WriteLine("Dave's age is {0} he started on {1} and makes {2}", Dave.Age, Dave.StartingDate, Dave.Salary);
+            Dave.Bonus(0.05);
+            Console.WriteLine("Dave's age is {0} he started on {1} and makes {2}", Dave.Age, Dave.StartingDate, Dave.Salary);
+            Employee Mary = new Employee(25, "Mary", 60000, new DateTime(2015, 12, 4));
+            Console.WriteLine("\n\nMary's age is {0} she started on {1} and amkes {2}", Mary.Age, Mary.StartingDate, Mary.Salary);
             Console.ReadKey();
         }
     }
