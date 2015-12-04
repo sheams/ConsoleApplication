@@ -250,17 +250,55 @@ namespace ConsoleProgram
 
 
     //  For Loops Program-5
+    /*class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 0; i < 2000; i++)
+            {
+                if (i % 100 == 0)
+                {
+                    Console.Write("Happy Birthday! {0} ", i);
+
+                }
+            }
+            Console.ReadKey();
+        }
+    }*/
+
+
+
+
+    // Switch Statements program
     class Program
     {
         static void Main(string[] args)
         {
-           for (int i = 0; i < 2000; i++)
-                if (i % 100 == 0)
-                {
-                    Console.Write("Happy Birthday! {0} ", i);
-                    Console.ReadKey();
-                }
+            Console.Write("Pick a number betwen 1 and 5 :");
+            int choice = int.Parse(Console.ReadLine());
+
+            switch (choice)
+            {
+                case 5:
+                    Console.WriteLine("Your picked the biggest legal value");
+                    break;
+                case 4:
+                    Console.WriteLine("You Chose 4");
+                    break;
+                case 3:
+                    Console.WriteLine("You Chose 3");
+                    break;
+                case 2:
+                    Console.WriteLine("You Chose 2");
+                    break;
+                case 1:
+                    Console.WriteLine("Your picked the lowest legal value");
+                    break;
+                default:
+                    Console.WriteLine("Not a leger Entry. please try again");
+                    break;
+            }
+            Console.ReadKey();
         }
     }
-
 }
