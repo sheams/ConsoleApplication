@@ -305,50 +305,110 @@ namespace ConsoleProgram
 
 
 
+    // Enumerations Program
+    /* class Program
+     {
+         enum Color
+         {
+             Red,
+             Orange,
+             Green,
+             Blue,
+             Indigo,
+             Violet
+         }
+         static void Main(string[] args)
+         {
+             Color favorite = Color.Green;
+             switch(favorite)
+             {
+                 case Color.Red:
+                     Console.WriteLine("You chose Red");
+                     break;
 
+                 case Color.Violet:
+                     Console.WriteLine("You chose Violet");
+                     break;
+
+                 case Color.Orange:
+                     Console.WriteLine("You chose Orange");
+                     break;
+
+                 case Color.Indigo:
+                     Console.WriteLine("You chose Indigo");
+                     break;
+
+                 case Color.Green:
+                     Console.WriteLine("You chose Green");
+                     break;
+
+                 case Color.Blue:
+                     Console.WriteLine("You chose Blue");
+                     break;
+                 default:
+                     Console.WriteLine("U didn't chose a color");
+                     break;
+             }
+             Console.ReadKey();
+         }
+     }*/
+
+
+
+
+    //  Properties and Fields Program
+    /* class Program
+     {
+         class Employee
+         {
+             private int age;
+             public int Age
+             {
+                 get { return age; }
+                 set { age = value; }
+             }
+         }
+         static void Main(string[] args)
+         {
+             Employee Dave = new Employee();
+             Dave.Age = 35;
+             Console.WriteLine("Dave's age is {0}", Dave.Age);
+             Console.ReadKey();
+         }
+     }*/
+
+
+
+
+
+    // Constructors and Initialization Program
     class Program
     {
-        enum Color
+        class Employee
         {
-            Red,
-            Orange,
-            Green,
-            Blue,
-            Indigo,
-            Violet
+            public int Age { get; set; }
+            public string name { get; set; }
+            public double salary { get; set; }
+            public DateTime startingDate { get; set; }
+
+
+            public void Bonus(double bonousPrecent)
+            {
+                salary += salary * bonousPrecent;
+            }
         }
         static void Main(string[] args)
         {
-            Color favorite = Color.Green;
-            switch(favorite)
+            Employee Dave = new Employee()
             {
-                case Color.Red:
-                    Console.WriteLine("You chose Red");
-                    break;
-
-                case Color.Violet:
-                    Console.WriteLine("You chose Violet");
-                    break;
-
-                case Color.Orange:
-                    Console.WriteLine("You chose Orange");
-                    break;
-
-                case Color.Indigo:
-                    Console.WriteLine("You chose Indigo");
-                    break;
-
-                case Color.Green:
-                    Console.WriteLine("You chose Green");
-                    break;
-
-                case Color.Blue:
-                    Console.WriteLine("You chose Blue");
-                    break;
-                default:
-                    Console.WriteLine("U didn't chose a color");
-                    break;
-            }
+                Age = 25,
+                name = "David",
+                salary = 50000.00,
+                startingDate = new DateTime(2015,12,4 ),
+            };
+            Console.WriteLine("Dave's age is {0} he started on {1} and makes {2}", Dave.Age, Dave.startingDate, Dave.salary);
+            Dave.Bonus(0.05);
+            Console.WriteLine("Dave's age is {0} he started on {1} and makes {2}", Dave.Age, Dave.startingDate, Dave.salary);
             Console.ReadKey();
         }
     }
