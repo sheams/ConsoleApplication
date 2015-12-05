@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -483,8 +484,8 @@ namespace ConsoleProgram
 
 
 
-    // Object Oriented Programming
-    class Program
+    // Object Oriented Programming useP1
+    /*class Program
     {
         static void Main(string[] args)
         {
@@ -492,6 +493,37 @@ namespace ConsoleProgram
             var myItem = newWarehouse.FiendAndReturnItem(101);
             Console.WriteLine("my new item is " + myItem.Name);
             Console.ReadKey();
+        }
+    }*/
+
+
+
+
+
+
+    // Inheritance and Polymorphism useP2
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var myComputer = new Computer();
+            myComputer.ID = 102;
+
+            item mySecondComputer = new Computer();
+            mySecondComputer.ID = 103;
+
+            Computer mySecondComputer2 = mySecondComputer as Computer;
+            mySecondComputer2.CPUType = "i7";
+            string myCPUType = mySecondComputer2.CPUType;
+            mySecondComputer2.Name = "jupiter";
+             
+            mySecondComputer2.Purchase();
+
+            Software mySoftware = new Software();
+            mySoftware.Name = "Foo";
+            mySoftware.ISBN = "1234";
+            mySoftware.Purchase();
+            Console.ReadLine();
         }
     }
 }
