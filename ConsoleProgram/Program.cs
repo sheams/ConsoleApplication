@@ -500,30 +500,63 @@ namespace ConsoleProgram
 
 
 
+    /*
+  // Inheritance and Polymorphism useP2
+  class Program
+  {
+      static void Main(string[] args)
+      {
+          var myComputer = new Computer();
+          myComputer.ID = 102;
 
-    // Inheritance and Polymorphism useP2
+          item mySecondComputer = new Computer();
+          mySecondComputer.ID = 103;
+
+          Computer mySecondComputer2 = mySecondComputer as Computer;
+          mySecondComputer2.CPUType = "i7";
+          string myCPUType = mySecondComputer2.CPUType;
+          mySecondComputer2.Name = "jupiter";
+
+          mySecondComputer2.Purchase();
+
+          Software mySoftware = new Software();
+          mySoftware.Name = "Foo";
+          mySoftware.ISBN = "1234";
+          mySoftware.Purchase();
+          Console.ReadLine();
+      }
+  }
+
+  */
+
+
+
+
+     /*
+    // Static Methods Program P3
     class Program
     {
         static void Main(string[] args)
         {
-            var myComputer = new Computer();
-            myComputer.ID = 102;
+            Item someItem = new Item();
+            Item newItem = someItem.GetItem();
+            Console.WriteLine("New Item ID = {0}, Name = {1}", newItem.ID, newItem.Name);
+            Console.ReadKey();
+        }
+    }
+     */
 
-            item mySecondComputer = new Computer();
-            mySecondComputer.ID = 103;
 
-            Computer mySecondComputer2 = mySecondComputer as Computer;
-            mySecondComputer2.CPUType = "i7";
-            string myCPUType = mySecondComputer2.CPUType;
-            mySecondComputer2.Name = "jupiter";
-             
-            mySecondComputer2.Purchase();
 
-            Software mySoftware = new Software();
-            mySoftware.Name = "Foo";
-            mySoftware.ISBN = "1234";
-            mySoftware.Purchase();
-            Console.ReadLine();
+
+    // Static Methods Program P4
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Item newItem = Item.GetItem();
+            Console.WriteLine("New Item ID = {0}, Name = {1}", newItem.ID, newItem.Name);
+            Console.ReadKey();
         }
     }
 }
