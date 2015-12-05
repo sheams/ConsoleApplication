@@ -418,7 +418,7 @@ namespace ConsoleProgram
 
 
     // Constructors and Initialization Program-2
-    class Program
+    /*class Program
     {
         class Employee
         {
@@ -461,6 +461,36 @@ namespace ConsoleProgram
             Console.WriteLine("Dave's age is {0} he started on {1} and makes {2}", Dave.Age, Dave.StartingDate, Dave.Salary);
             Employee Mary = new Employee(25, "Mary", 60000, new DateTime(2015, 12, 4));
             Console.WriteLine("\n\nMary's age is {0} she started on {1} and amkes {2}", Mary.Age, Mary.StartingDate, Mary.Salary);
+            Console.ReadKey();
+        }
+    }*/
+
+
+
+
+
+    // ......................................end 1-5 tutroial.....................................................
+    //============================================================================================================
+
+
+
+
+
+
+
+    // Now use Program.cs, item.cs, Warehouse.cs & Resource.cs........
+
+
+
+
+    // Object Oriented Programming
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var newWarehouse = new Warehouse("Warehouse 1", 101);
+            var myItem = newWarehouse.FiendAndReturnItem(101);
+            Console.WriteLine("my new item is " + myItem.Name);
             Console.ReadKey();
         }
     }
